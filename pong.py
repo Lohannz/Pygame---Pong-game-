@@ -14,7 +14,7 @@ def screen_winner(winner):
         winner_text = 'Direito'
         color = pygame.Color('blue')
 
-    basic_font = pygame.font.Font('./test/DigitalDisco.ttf', 50)
+    basic_font = pygame.font.Font('./DigitalDisco.ttf', 50)
     text_surf = basic_font.render(f"Ganhador {winner_text}!", True, color)
     text_rect = text_surf.get_rect(midbottom=(WIDTH / 2, HEIGHT / 2))
     screen.blit(text_surf, text_rect)
